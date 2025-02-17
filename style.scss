@@ -140,13 +140,30 @@ body {
       }
     }
 
+
+    .button-container {
+      margin-top: 18px;
+    }
+
     .button {
-      margin: 30px auto 30px 0;
-      padding: 10px 30px;
+      margin: 60px auto 30px 0;
+      padding: 3px 30px;
       text-decoration: none;
       color: white;
+      font-size: 12px;
       text-transform: uppercase;
       font-family: $font-family-normal;
+      font-weight: 700;
+      border-radius: 3px;
+      background-color: aqua;
+      
+
+      &.button-purple {
+        background-image: linear-gradient(to right, #e53e83, #db3e99);
+      }
+      &.button-green {
+
+      }
     }
 
     &.section-content {
@@ -154,40 +171,57 @@ body {
       .left-side {
         
         .background-container {
+          $opacity: 0.95;
+          position: relative;
+          background-image: linear-gradient(
+            45deg,
+            rgba(72, 60, 73, $opacity), 
+            rgba(58, 32, 92, $opacity), 
+            rgba(179, 99, 9, $opacity),
+            rgba(209, 104, 18, $opacity)
+          ),
+          url('images/banner-bg-texture.jpg');   
+          background-repeat: no-repeat;
+          background-size: cover;
           
           .wrapper {
+
+
             padding: 100px 100px 100px 170px;
             
             .left {
-              padding-right: 50px;
+              padding-top: 90px;
+              padding-right: 80px;
+              margin-right: 60px;
+              padding-bottom: 70px;
+              background-image: radial-gradient(circle at 130% 170%, #009aae 50%, transparent 50%);
             }
             
             .right {
               display: flex;
               flex-flow: column;
               justify-content: space-between;
-
+            .image-container{
+              background-image: linear-gradient(45deg, #614173,#d865b0, #e4a8b0);
               img {
-                width: 200px;
-                height: 200px;
-                background-color: #c596ce;
+                width: 250px;
+                height: 250px;
+                opacity: 0.2;
+                object-position: 0%;
+                object-fit: cover;
               }
+            }
               
               .background-container {
-                margin: auto auto;
-                width: 100%;
+                margin-left: auto;
+                width: 70%;
                 height: 200px;
-                background-color: purple;
+                background-image: linear-gradient(to bottom, #e53e83, #db3e99);
+
               }
             }
 
-            background-image: linear-gradient(
-              45deg,
-              rgb(0, 0, 0), 
-              rgb(22, 0, 51), 
-              rgb(179, 99, 9),
-              rgb(209, 104, 18)
-              );
+
           }
         }
       }
