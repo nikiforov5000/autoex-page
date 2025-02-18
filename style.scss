@@ -30,7 +30,7 @@ body {
   overflow: hidden;
 
   #page-wrapper {
-    background-color: #ffffff;
+    background-color: #beb2c9;
   }
 
   h1 {
@@ -87,6 +87,7 @@ body {
   }
 
   .section {
+    background-color: white;
     width: $section-width;
 
     padding: 0;
@@ -190,58 +191,55 @@ body {
       .left-side {
         
         .background-container {
-          $opacity: 0.87;
+          $opacity: 0.95;
           position: relative;
           background-image: 
           linear-gradient(
             -45deg,
-            rgba(4, 0, 255, 0.4),
+            rgba(200, 88, 52, 1),
             rgba(209, 104, 18, 0),
             rgba(209, 104, 18, 0),
-            rgba(255, 46, 161, 0.644)
+            rgba(209, 104, 18, 0),
+            rgba(145, 85, 155, 1),
           ),
           linear-gradient(
             45deg,
-            rgba(72, 60, 73, $opacity), 
-            rgba(58, 32, 92, $opacity), 
+            rgba(64, 39, 94, $opacity), 
+            rgba(39, 29, 63, $opacity), 
             rgba(179, 99, 9, $opacity),
-            rgba(209, 104, 18, $opacity)
+            rgba(228, 107, 34, $opacity)
           ),
-          url('images/banner-bg-texture.jpg');   
+          url('images/banner-bg-texture-bw.jpg');   
           background-repeat: no-repeat;
           background-size: cover;
           
           .wrapper {
-            padding: 100px 50px 22px 100px;
+            padding: 48px 50px 48px 100px;
             
             .left {
               padding-top: 90px;
               padding-right: 80px;
-              margin-right: 60px;
               padding-bottom: 70px;
-              background-image: radial-gradient(circle at 130% 170%, #009aae 50%, transparent 50%);
             }
             
             .right {
-
               display: flex;
               flex-flow: column;
               justify-content: space-between;
 
-            .image-container{
-              background-image: linear-gradient(45deg, #614173,#d865b0, #e4a8b0);
-              img {
-                width: 250px;
-                height: 250px;
-                opacity: 0.2;
-                object-position: 0%;
-                object-fit: cover;
+              .image-container{
+                background-image: linear-gradient(45deg, #614173,#d865b0, #e4a8b0);
+                img {
+                  width: 335px;
+                  height: 250px;
+                  opacity: 0.2;
+                  object-position: 0%;
+                  object-fit: cover;
+                }
               }
-            }
               
               .background-container {
-                margin-left: auto;
-                width: 70%;
+                width: 100%;
                 height: 200px;
                 background-image: linear-gradient(to bottom, #e53e83, #db3e99);
 
@@ -329,7 +327,7 @@ body {
                 margin-bottom: 10px;
               }
 
-              $background-image-item: url('/images/banner-bg-texture.jpg');
+              $background-image-item: url('/images/banner-bg-texture-bw.jpg');
               $gradient-radius: 410px;
 
               &.item-1 {
