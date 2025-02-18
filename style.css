@@ -184,7 +184,7 @@ body {
   background-size: cover;
 }
 .main-wrap .section.section-content .left-side .background-container .wrapper {
-  padding: 100px 100px 22px 170px;
+  padding: 100px 50px 22px 100px;
 }
 .main-wrap .section.section-content .left-side .background-container .wrapper .left {
   padding-top: 90px;
@@ -217,7 +217,7 @@ body {
   background-image: linear-gradient(to bottom, #e53e83, #db3e99);
 }
 .main-wrap .section.section-content .left-side .lower-part {
-  padding: 80px 40px 0 130px;
+  padding: 80px 50px 0 100px;
   padding-bottom: auto;
 }
 .main-wrap .section.section-content .left-side .lower-part .left {
@@ -233,6 +233,9 @@ body {
 .main-wrap .section.section-content .left-side .lower-part .left p.description {
   margin-bottom: 8px;
   font-weight: 700;
+}
+.main-wrap .section.section-content .left-side .lower-part .right {
+  padding-right: 0px;
 }
 .main-wrap .section.section-content .left-side .lower-part .right img {
   width: 400px;
@@ -256,7 +259,7 @@ body {
   background-image: radial-gradient(circle at 100% -90%, #e0671e 50%, transparent 50%);
 }
 .main-wrap .section.section-content .right-side .wrapper {
-  padding: 48px 100px 0px 22px;
+  padding: 48px 50px 0px;
 }
 .main-wrap .section.section-content .right-side .wrapper .item-list {
   width: 210px;

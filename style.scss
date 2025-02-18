@@ -212,7 +212,7 @@ body {
           background-size: cover;
           
           .wrapper {
-            padding: 100px 100px 22px 170px;
+            padding: 100px 50px 22px 100px;
             
             .left {
               padding-top: 90px;
@@ -253,7 +253,7 @@ body {
         }
 
         .lower-part {
-          padding: 80px 40px 0 130px;
+          padding: 80px 50px 0 100px;
           padding-bottom: auto;
 
           .left {
@@ -275,6 +275,7 @@ body {
           }
 
           .right {
+            padding-right: 0px;
             
             img {
               width: 400px;
@@ -307,7 +308,7 @@ body {
         max-height: 100vh;
         
         .wrapper {
-          padding: 48px 100px 0px 22px;
+          padding: 48px 50px 0px;
           
           .item-list {
             width: 210px;
