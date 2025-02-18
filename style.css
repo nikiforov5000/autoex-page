@@ -161,6 +161,17 @@ body {
 .main-wrap .section .button.button-purple {
   background-image: linear-gradient(to right, #e53e83, #db3e99);
 }
+.main-wrap .section .button.button-orange {
+  background-color: #e46828;
+}
+.main-wrap .section .button.button-full-width {
+  display: flex;
+  justify-content: center;
+}
+.main-wrap .section .background-container {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
 .main-wrap .section.section-content .left-side .background-container {
   position: relative;
   background-image: linear-gradient(-45deg, rgba(4, 0, 255, 0.4), rgba(209, 104, 18, 0), rgba(209, 104, 18, 0), rgba(255, 46, 161, 0.644)), linear-gradient(45deg, rgba(72, 60, 73, 0.87), rgba(58, 32, 92, 0.87), rgba(179, 99, 9, 0.87), rgba(209, 104, 18, 0.87)), url("images/banner-bg-texture.jpg");
@@ -199,4 +210,46 @@ body {
   width: 70%;
   height: 200px;
   background-image: linear-gradient(to bottom, #e53e83, #db3e99);
+}
+.main-wrap .section.section-content .right-side {
+  align-items: start;
+  position: relative;
+  max-height: 100vh;
+}
+.main-wrap .section.section-content .right-side .corner {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: radial-gradient(circle at 100% -90%, #e0671e 50%, transparent 50%);
+}
+.main-wrap .section.section-content .right-side .wrapper {
+  padding: 48px 100px 0px 22px;
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list {
+  width: 210px;
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list .item {
+  margin-bottom: 55px;
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list .item .background-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 170px;
+  padding: 0 30px;
+  margin-bottom: 12px;
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list .item .description {
+  margin-bottom: 10px;
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list .item.item-1 .background-container {
+  background-image: radial-gradient(410px, rgba(224, 103, 30, 0.9), black), url("/images/banner-bg-texture.jpg");
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list .item.item-2 .background-container {
+  background-image: radial-gradient(410px, rgba(15, 128, 124, 0.9), black), url("/images/banner-bg-texture.jpg");
+}
+.main-wrap .section.section-content .right-side .wrapper .item-list .item.item-3 .background-container {
+  background-image: radial-gradient(410px, rgba(58, 25, 56, 0.9), black), url("/images/banner-bg-texture.jpg");
 }/*# sourceMappingURL=style.css.map */

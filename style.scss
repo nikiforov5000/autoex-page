@@ -161,9 +161,24 @@ body {
       &.button-purple {
         background-image: linear-gradient(to right, #e53e83, #db3e99);
       }
+
+      &.button-orange {
+        background-color: #e46828;
+      }
+
+      &.button-full-width {
+        display: flex;
+        justify-content: center;
+      }
+
       &.button-green {
 
       }
+    }
+
+    .background-container {
+      box-shadow: 0 15px 20px rgba($color: #000000, $alpha: 0.15);
+      border-radius: 3px;
     }
 
     &.section-content {
@@ -206,9 +221,11 @@ body {
             }
             
             .right {
+
               display: flex;
               flex-flow: column;
               justify-content: space-between;
+
             .image-container{
               background-image: linear-gradient(45deg, #614173,#d865b0, #e4a8b0);
               img {
@@ -233,6 +250,85 @@ body {
           }
         }
       }
+      
+      .right-side {
+        .corner {
+          right: 0;
+          top: 0;
+          position: absolute;
+          width: 100%;
+          height: 300px;
+          background-image: radial-gradient(circle at 100% -90%, #e0671e 50%, transparent 50%);
+
+        }
+
+        align-items: start;
+        position: relative;
+        max-height: 100vh;
+        
+        .wrapper {
+          padding: 48px 100px 0px 22px;
+          
+          .item-list {
+            width: 210px;
+
+            .item {
+              margin-bottom: 55px;
+              
+              .background-container {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                height: 170px;
+                padding: 0 30px;
+                margin-bottom: 12px;
+              }
+
+              .description {
+                margin-bottom: 10px;
+              }
+
+              $background-image-item: url('/images/banner-bg-texture.jpg');
+              $gradient-radius: 410px;
+
+              &.item-1 {
+
+                .background-container {
+                  background-image: radial-gradient(
+                    $gradient-radius, 
+                    rgba(224,103, 30, 0.9), 
+                    black), 
+                    $background-image-item ;
+                }
+              }
+              
+              &.item-2 {
+                
+                .background-container {
+                  background-image: radial-gradient(
+                    $gradient-radius, 
+                    rgba(15,128, 124, 0.9), 
+                    black), 
+                    $background-image-item;
+                }
+              }
+
+              &.item-3 {
+                
+                .background-container {
+                  background-image: radial-gradient(
+                    $gradient-radius, 
+                    rgba(58, 25, 56, 0.9), 
+                    black), 
+                    $background-image-item ;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
     }
   }
 }
