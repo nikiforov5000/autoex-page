@@ -31,6 +31,7 @@ body {
   @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 }
 .main-wrap #page-wrapper {
+  position: relative;
   background-color: #beb2c9;
 }
 .main-wrap h1 {
@@ -193,6 +194,33 @@ body {
 .main-wrap .section .background-container {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+}
+.main-wrap .section.section-navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  background-color: rgba(110, 0, 150, 0.0941176471);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.main-wrap .section.section-navbar .navbar-container {
+  margin: 20px auto;
+}
+.main-wrap .section.section-navbar .navbar-container .navbar-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-wrap .section.section-navbar .navbar-container .navbar-list .navbar-item {
+  font-family: "PT Sans", sans-serif;
+  margin-right: 20px;
+}
+.main-wrap .section.section-navbar .navbar-container .navbar-list .navbar-item a {
+  text-decoration: none;
+  color: white;
+}
+.main-wrap .section.section-navbar .navbar-container .navbar-list .navbar-item a img {
+  width: 40px;
 }
 .main-wrap .section.section-content .left-side .background-container {
   position: relative;
