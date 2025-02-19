@@ -181,6 +181,25 @@ body {
       }
     }
 
+
+    .hover-overlay {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.144);
+      opacity: 0;
+    }
+
+    .hover-element {
+      position: relative;
+      display: inline-block;
+    }
+
     .background-container {
       box-shadow: 0 15px 20px rgba($color: #000000, $alpha: 0.15);
       border-radius: 3px;
@@ -312,6 +331,9 @@ body {
             width: 210px;
 
             .item {
+              position: relative;
+              display: inline-block;
+              transition: transform 0.3s ease;
               margin-bottom: 55px;
               
               .background-container {
@@ -322,16 +344,16 @@ body {
                 padding: 0 30px;
                 margin-bottom: 12px;
               }
-
+              
               .description {
                 margin-bottom: 10px;
               }
-
+              
               $background-image-item: url('/images/banner-bg-texture-bw.jpg');
               $gradient-radius: 410px;
-
+              
               &.item-1 {
-
+                
                 .background-container {
                   background-image: radial-gradient(
                     $gradient-radius, 

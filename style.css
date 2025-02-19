@@ -174,6 +174,22 @@ body {
 .main-wrap .section .button.button-green {
   background-color: #079aa5;
 }
+.main-wrap .section .hover-overlay {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+  opacity: 0;
+}
+.main-wrap .section .hover-element {
+  position: relative;
+  display: inline-block;
+}
 .main-wrap .section .background-container {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -263,6 +279,9 @@ body {
   width: 210px;
 }
 .main-wrap .section.section-content .right-side .wrapper .item-list .item {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
   margin-bottom: 55px;
 }
 .main-wrap .section.section-content .right-side .wrapper .item-list .item .background-container {
